@@ -42,14 +42,17 @@ author:
 # youtube           : your_channel_name
 # keybase           : your_username
 
-### Certificates ###
-permalink: /certificates/:title
+### Posts ###
+permalink: /blog/:title
 
 ### Collections ###
 collections:
   projects:
     output: true
     permalink: /projects/:name
+  certificates:
+    output: true
+    permalink: /certificates/:name
   elements: # For Documentation Only
     output: true # For Documentation Only
 
@@ -89,6 +92,11 @@ defaults:
       type: "certificates"
     values:
       layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: false # Set to true to enable disqus comments
 
 ### Exclude from processing ###
 exclude:
