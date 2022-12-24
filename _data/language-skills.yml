@@ -1,0 +1,7 @@
+- name: Indonesia (Native)
+  percentage: 100
+  color: info
+
+- name: English
+  percentage: 80
+  color: success
